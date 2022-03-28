@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './component/App/App'
+import CounterApp from './component/counter-app/CounterApp'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CounterApp />
   </React.StrictMode>,
   document.getElementById('root')
 )

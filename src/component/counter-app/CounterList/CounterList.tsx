@@ -1,5 +1,5 @@
-import { useAppSelector } from '../../store'
-import { counterSelectors } from '../../services/counter/slice'
+import { useAppSelector } from '../../../store'
+import { counterSelectors } from '../../../services/counter/slice'
 import { Counter } from '../Counter/Counter'
 import styles from './counter.module.css'
 

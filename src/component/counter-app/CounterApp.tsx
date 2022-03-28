@@ -3,11 +3,11 @@ import React, { useEffect } from 'react'
 import { Provider } from 'react-redux'
 import { setupCounterListeners } from '../../services/counter/listeners'
 import { startAppListening, store } from '../../store'
-import { CounterList } from '../CounterList/CounterList'
-import CreateCounterForm from '../CreateCounterForm/CreateCounterForm'
-import './App.css'
+import { CounterList } from './CounterList/CounterList'
+import CreateCounterForm from './CreateCounterForm/CreateCounterForm'
+// import './App.css'
 
-function App() {
+function CounterApp() {
   useEffect(() => {
     const subscriptions: Unsubscribe[] = [
       setupCounterListeners(startAppListening),
@@ -27,4 +27,4 @@ function App() {
   )
 }
 
-export default App
+export default CounterApp

@@ -1,7 +1,7 @@
 import { EntityId } from '@reduxjs/toolkit'
 import { memo } from 'react'
-import { counterActions, counterSelectors } from '../../services/counter/slice'
-import { useAppDispatch, useAppSelector } from '../../store'
+import { counterActions, counterSelectors } from '../../../services/counter/slice'
+import { useAppDispatch, useAppSelector } from '../../../store'
 import styles from './counter.module.css'
 import clsx from 'clsx'
 
