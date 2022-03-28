@@ -1,27 +1,29 @@
 import { Unsubscribe } from '@reduxjs/toolkit'
 import React, { useEffect } from 'react'
 import { Provider } from 'react-redux'
-import { setupCounterListeners } from '../../services/counter/listeners'
-import { startAppListening, store } from '../../store'
+import { setupCounterListeners } from './services/counter/listeners'
+import { startAppListening, store } from './store'
 import { CounterList } from './CounterList/CounterList'
 import CreateCounterForm from './CreateCounterForm/CreateCounterForm'
+import App from './App'
 // import './App.css'
 
 function CounterApp() {
-  useEffect(() => {
-    const subscriptions: Unsubscribe[] = [
-      setupCounterListeners(startAppListening),
-    ]
+  // useEffect(() => {
+  //   const subscriptions: Unsubscribe[] = [
+  //     setupCounterListeners(startAppListening),
+  //   ]
 
-    return () => subscriptions.forEach((unsubscribe) => unsubscribe())
-  }, [])
+  //   return () => subscriptions.forEach((unsubscribe) => unsubscribe())
+  // }, [])
   return (
     <React.StrictMode>
     <Provider store={store}>
-      <main className={'main'}>
+      {/* <main className={'main'}>
         <CreateCounterForm />
         <CounterList />
-      </main>
+      </main> */}
+      <App/>
     </Provider>
   </React.StrictMode>
   )

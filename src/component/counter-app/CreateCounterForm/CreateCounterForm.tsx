@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react'
 import styles from './createCounter.module.css'
-import { useAppDispatch } from '../../../store'
-import { counterActions } from '../../../services/counter/slice'
+import { useAppDispatch } from '../store'
+import { counterActions } from '../services/counter/slice'
 import clsx from 'clsx'
 const sectionClassname = clsx('paper', styles.section)
 function CreateCounterForm() {
